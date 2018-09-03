@@ -44,6 +44,12 @@ app.get('/about',(req,res) => {
     });
 });
 
+app.get('/projects',(req,res) =>{
+    res.render('project.hbs', {
+        pageTitle: 'project'
+    });
+});
+
 app.get('/bad', ( req, res) => {
     res.send({
         errormass:'unabke to reach '
